@@ -11,10 +11,6 @@ To run this project, we need to have the following dependencies installed:
 * **Lombok:** Lombok is a Java library that helps reduce boilerplate code by providing annotations for generating getters, setters, constructors, and more.
 * **H2 Database:** H2 is an in-memory database that can be used during development and testing. It provides a lightweight and fast database solution.
 ---
-### Configuration
-No additional configuration is required for this project as it uses default settings for Spring Data JPA, Lombok, H2 Database, and Spring Web. However, we can customize the configurations as per the specific requirements.
-
----
 ### Usage
 This project serves as a basic template for building web applications using the MVC architecture with Spring Data JPA, Lombok, H2 Database, and Spring Web. We can modify and extend the code to suit the application's needs.
 
