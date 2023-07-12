@@ -12,9 +12,9 @@ To run this project, we need to have the following dependencies installed:
 * **H2 Database:** H2 is an in-memory database that can be used during development and testing. It provides a lightweight and fast database solution.
 ---
 ### Usage
-This project serves as a basic template for building web applications using the MVC architecture with Spring Data JPA, Lombok, H2 Database, and Spring Web. We can modify and extend the code to suit the application's needs.
+This project is a basic template for building web applications using the MVC architecture with Spring Data JPA, Lombok, H2 Database, and Spring Web. We can modify and extend the code to suit the application's needs.
 
-Some key files and directories to focus on:
+Some essential files and directories to focus on:
 
 * **src/main/java/com/geekster/HotelManagementH2db/controller/:** Contains controller classes that handle HTTP requests and define API endpoints.
 * **src/main/java/com/geekster/HotelManagementH2db/model/:** Defines the model classes (entities) for the application.
@@ -28,15 +28,20 @@ The project exposes the following endpoints to perform various operations on hot
 * **POST /room:** Creates a new room.
 * **GET /rooms:** Retrieves all rooms in the hotel.
 * **GET /room/id/{roomId}:** Retrieves a room by its ID.
-* **GET /room/{id}/exists:** Check whether the room by its ID exists or not.
+* **GET /room/{id}/exists:** Check whether the room by its ID exists.
 * **GET/rooms/count:** Retrieves the count of total rooms.
 * **GET /rooms/id/lists:** Retrieves a list of rooms by their IDs using @RequestBody to pass the list of room IDs.
-* **GET /rooms/available:** Retrieves all available rooms in the hotel.
 * **PUT /room/{id}:** Updates an existing room.
 * **DELETE /room/{id}:** Deletes a room. 
-  
-Feel free to explore and modify these files to build your own application.
 
+### Custom Finders:
+
+* **GET /rooms/status/{roomStatus}:** Retrieves all available rooms in the hotel where the room status is false.
+* **GET /rooms/type/{roomType}/status/{roomStatus}:** Fetch all rooms by their type and status.
+* **GET /rooms/type/{roomType}/status/{roomStatus}/price/range:** Fetch all rooms by their type and status between the range of prices.And the upper and lower limits of the price range passed by @RequestParam.
+* **GET /rooms/type/{roomType}:** Get all rooms by their type and sort decreasing order by price.
+* **GET /rooms/types/{roomType1}/{roomType2}:**Fetch all rooms by type and price range or another type.
+Feel free to explore and modify these files to build your own application.
 ---
 ### Conclusion
 This project showcases the implementation of the MVC architecture using Spring Data JPA, Lombok, H2 Database, and Spring Web. It provides a solid foundation for developing web applications with a clear separation of concerns and improved code maintainability.
