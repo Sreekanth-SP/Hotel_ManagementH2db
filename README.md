@@ -11,6 +11,21 @@ To run this project, we need to have the following dependencies installed:
 * **Lombok:** Lombok is a Java library that helps reduce boilerplate code by providing annotations for generating getters, setters, constructors, and more.
 * **H2 Database:** H2 is an in-memory database that can be used during development and testing. It provides a lightweight and fast database solution.
 ---
+## Project Structure
+The project follows the MVC architecture, which separates the application into three main components:
+
+* **Models:** These are the entity models used in the project, representing different aspects of the Hotel Management system.
+    * HotelRoom - It has id as the primary key and it autogenerates, room number as unique, room type as enum, room price and room status.
+   
+* **Controllers:** Controllers handle incoming requests, process the data, and return appropriate responses. They act as intermediaries between the models and views.
+    * RoomControllers
+
+* **Service:** In Service, we can implement the business logic.
+    * RoomServices
+  
+* **Repository:** The repositories are extending the JPA repository where the CRUD operations work. The repositories are interfaces.
+    * IRoomRepo
+---
 ### Usage
 This project is a basic template for building web applications using the MVC architecture with Spring Data JPA, Lombok, H2 Database, and Spring Web. We can modify and extend the code to suit the application's needs.
 
