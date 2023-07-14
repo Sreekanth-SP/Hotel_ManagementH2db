@@ -55,7 +55,7 @@ The project exposes the following endpoints to perform various operations on hot
 * **GET /rooms/type/{roomType}/status/{roomStatus}:** Fetch all rooms by their type and status.
 * **GET /rooms/type/{roomType}/status/{roomStatus}/price/range:** Fetch all rooms by their type and status between the range of prices.And the upper and lower limits of the price range passed by @RequestParam.
 * **GET /rooms/type/{roomType}:** Get all rooms by their type and sort decreasing order by price.
-* **GET /rooms/types/{roomType1}/{roomType2}:**Fetch all rooms by type and price range or another type.
+* **GET /rooms/types/{roomType1}/{roomType2}:** Fetch all rooms by type and price range or another type.
 Feel free to explore and modify these files to build your own application.
 ---
 ### Conclusion
