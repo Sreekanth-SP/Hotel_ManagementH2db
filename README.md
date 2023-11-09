@@ -1,3 +1,4 @@
+
 # Hotel Management Project using H2-database
 > Hotel Management  using Springboot Annotations in the H2 database. This repository contains a sample project that demonstrates the Model-View-Controller (MVC) architecture using Spring Data JPA, Lombok, H2 Database, and Spring Web.
 
